@@ -1,0 +1,233 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header{
+   background-color: #fbf3e4;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.menu{
+   position:absolute;
+   top: -1rem;
+   right: 5%;
+   font-size: 10vw;
+   margin: 0%;
+   line-height: 1;
+}
+
+.gmail{
+    position: absolute;
+    bottom: 3.5rem;
+    left: 9%;
+    margin: 0%;
+    font-family: Poppins;
+    margin-left: 1rem;
+
+}
+
+.reply{
+    position: absolute;
+    bottom: 3.5rem;
+    left: 7%;
+    margin: 0%;
+}
+
+.phone{
+    position: absolute;
+    bottom: 5rem;
+    left: 5.5%;
+    margin: 0%;
+    font-family: Poppins;
+    margin-left: 1rem;
+}
+
+.phone i{
+    margin-right: 20px;
+}
+.header1{
+    display: flex;
+   flex-direction: column;
+   align-items: center;  
+   height: 70vh;
+   width: 60vw;  
+   position: absolute; 
+}
+   
+.heading1 h5{
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    font-size: 10vw;
+    width: fit-content;
+    height: 5.9rem;
+    color: maroon;
+    margin: 0;
+    word-spacing: rem;  
+    z-index: 1;
+    font-weight: 100;
+}
+
+.heading2{
+     height: 9rem;
+    width: 100%;
+    margin-top: 0px;
+    object-fit: fit;
+    position: relative;
+    
+}
+
+.headerp{
+    border: 3px solid black;
+    border-radius: .4rem;
+    width:15rem;
+    font-family: bebas neue regular;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    background-color: #dfd7c8;  
+    line-height: 1rem;
+    font-size: large;
+    margin-top: 2rem;
+}
+
+.heading2 h1{
+    line-height: 0px;
+    font-size: 19vw;
+    padding-bottom: 700px;
+    position: relative;
+    bottom: 30%;
+    font-family: bebas neue regular;
+    /* letter-spacing: .5rem; */
+    padding-left: 2rem;
+    font-weight: 500;
+    line-height: 1rem;
+}  
+
+.hero{
+    background-color: #fbf3e4;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ 
+.left{
+    width: 35vw;
+    height: 1/2;
+    justify-self: center;
+    padding-bottom: 5rem;
+    
+    
+
+}
+
+.intro h5{
+    font-size: 4vw;
+    font-family: 'Dancing Script', cursive;
+    color: maroon;
+    line-height: 0%;
+}
+
+.intro h1{
+    font-size: 8vw;
+    font-family: bebas neue;
+    line-height: 0%;
+    margin-bottom: 4rem;
+}
+
+.tittle{
+    font-family: Poppins;
+    line-height: 1.5rem;
+    word-spacing: .5rem;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+.mid{
+    
+    height: 48vw;
+    width: 25vw;
+    border: 10px solid maroon;
+    background-image: url(./assets/20221203_120237.jpg);
+    background-size: cover;
+    transform: rotateX('90angle');
+    background-position: left;
+    background: ;
+}
+
+.right h5{
+    font-family: Bebas Neue;
+    font-weight: 300;
+    font-size: larger;
+    text-align: right;
+    margin: 0%;
+    padding-left: 40px;
+    letter-spacing:2px;
+    
+}
+
+.footer{
+    background-color: #fbf3e4;
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+  
+   
+   
+}
+
+.footerleft1{
+    width: 50%;
+    height: max-content;
+   justify-self: center;
+   align-self: end;   
+}
+
+.footerleft1 p{
+    font-family: poppins;
+}
+
+.footerleft1 h1{
+    font-family: bebas neue;
+    letter-spacing: 5px;
+}
+.feature{
+    width:50% ;
+    justify-self: center;
+    align-self: self-start;
+}
+
+.feature li{
+    font-family: poppins;
+}
+
+.feature h1{
+    font-family: bebas neue;
+    letter-spacing: 5px;
+}
+.product{
+    background-image: url(./assets/logo.png);
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:50% ;
+    height: 50%;
+    grid-row: span 2 ;
+    border: 5px solid maroon;
+    justify-self: baseline;
+    align-self: center;
+}
