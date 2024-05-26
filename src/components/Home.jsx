@@ -40,7 +40,7 @@ const Home = () => {
                 <div className="flex flex-col justify-between">
                   <div>
                     <h4 className="__className_399708 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary font-black text-lg md:text-lg lg:text-lg">
-                      Crypto Tracking
+                      Crypto Track
                     </h4>
                     <p className="font-normal text-secondary text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
                       A Crypto app tracking current crypto prices.
