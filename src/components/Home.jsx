@@ -33,7 +33,7 @@ const Home = () => {
               >
                 <img
                   className="w-44 h-40 object-contain"
-                  src="public/Cryptoapp.png"
+                  src="/Cryptoapp.png"
                   alt="cryptoapp"
                 />
 
