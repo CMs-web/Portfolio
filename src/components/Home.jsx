@@ -94,7 +94,7 @@ const Home = () => {
             >
               <img
                 className="w-48 h-40 object-cover"
-                src="../public/bankist.png"
+                src="/bankist.png"
                 alt=""
               />
               <div className="flex flex-col justify-between">
