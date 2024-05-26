@@ -64,7 +64,7 @@ const Home = () => {
             >
               <img
                 className="w-44 h-40 object-cover"
-                src="/expanseManager.png"
+                src="/expanseManager.PNG"
                 alt=""
               />
               <div className="flex flex-col justify-between">
@@ -94,7 +94,7 @@ const Home = () => {
             >
               <img
                 className="w-48 h-40 object-cover"
-                src="/bankist.png"
+                src="/bankist.PNG"
                 alt=""
               />
               <div className="flex flex-col justify-between">
