@@ -23,7 +23,7 @@ const About = () => {
                 decoding="async"
                 data-nimg="1"
                 className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
-                src="../public/about1.webp"
+                src="/about1.webp"
                 style={{ color: "transparent" }}
               />
             </div>
@@ -42,7 +42,7 @@ const About = () => {
                 decoding="async"
                 data-nimg="1"
                 className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
-                src="../public/about2.webp"
+                src="/about2.webp"
                 style={{ color: "transparent" }}
               />
             </div>
@@ -60,7 +60,7 @@ const About = () => {
                 decoding="async"
                 data-nimg="1"
                 className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
-                src="../public/about3.webp"
+                src="/about3.webp"
                 style={{ color: "transparent" }}
               />
             </div>
@@ -78,7 +78,7 @@ const About = () => {
                 decoding="async"
                 data-nimg="1"
                 className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
-                src="../public/about4.webp"
+                src="/about4.webp"
                 style={{ color: "transparent" }}
               />
             </div>
