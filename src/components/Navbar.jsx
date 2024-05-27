@@ -204,7 +204,7 @@ const Navbar = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.5"
+            strokeWidth="3"
             strokeLinecap="round"
             strokeLinejoin="round"
             class="h-4 w-4 flex-shrink-0"
