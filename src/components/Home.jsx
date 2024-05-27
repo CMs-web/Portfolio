@@ -33,7 +33,7 @@ const Home = () => {
               >
                 <img
                   className="w-44 h-40 object-contain"
-                  src="../public/Cryptoapp.png"
+                  src="/Cryptoapp.png"
                   alt="cryptoapp"
                 />
 
@@ -64,7 +64,7 @@ const Home = () => {
             >
               <img
                 className="w-44 h-40 object-cover"
-                src="../public/expanseManager.png"
+                src="/expanseManager.PNG"
                 alt=""
               />
               <div className="flex flex-col justify-between">
@@ -73,8 +73,8 @@ const Home = () => {
                     Expanse Manager
                   </h4>
                   <p className="font-normal text-secondary text-sm md:text-sm lg:text-sm mt-2 max-w-xl">
-                    Don&apos;t remember your Expense so far, here&apos;s
-                    your manager to track your expanses
+                    Don&apos;t remember your Expense so far, here&apos;s your
+                    manager to track your expanses
                   </p>
                 </div>
                 <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
@@ -94,7 +94,7 @@ const Home = () => {
             >
               <img
                 className="w-48 h-40 object-cover"
-                src="../public/bankist.png"
+                src="/bankist.PNG"
                 alt=""
               />
               <div className="flex flex-col justify-between">
@@ -120,7 +120,6 @@ const Home = () => {
         </div>
       </main>
     </div>
-
   );
 };
 

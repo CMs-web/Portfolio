@@ -19,7 +19,7 @@ const Projects = () => {
               >
                 <img
                   className="w-44 h-40 object-contain"
-                  src="../public/Cryptoapp.png"
+                  src="/Cryptoapp.png"
                   alt="cryptoapp"
                 />
 
@@ -50,7 +50,7 @@ const Projects = () => {
             >
               <img
                 className="w-44 h-40 object-cover"
-                src="../public/expanseManager.png"
+                src="/expanseManager.PNG"
                 alt=""
               />
               <div className="flex flex-col justify-between">
@@ -80,7 +80,7 @@ const Projects = () => {
             >
               <img
                 className="w-48 h-40 object-cover"
-                src="../public/bankist.png"
+                src="/bankist.PNG"
                 alt=""
               />
               <div className="flex flex-col justify-between">
