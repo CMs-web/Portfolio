@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
 
   return (
-    <nav className="px-6 z-[100] py-10 bg-neutral-100 lg:w-[14%] border-r border-neutral-200/[0.8] fixed top-0 h-screen lg:relative  left-0 lg:flex flex-col justify-between max-w-[14rem]">
+    <nav className="hidden px-6 z-[100] py-10 bg-neutral-100 lg:w-[14%] border-r border-neutral-200/[0.8] fixed top-0 h-screen lg:relative  left-0 lg:flex flex-col justify-between max-w-[14rem]">
       <div className="flex items-center">
         <img
           className="rounded-3xl w-10 object-cover object-right h-10"
