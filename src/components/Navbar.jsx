@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-
   return (
     <nav className="px-6 z-[100] py-10 bg-neutral-100 lg:w-[14%] border-r border-neutral-200/[0.8] fixed top-0 h-screen lg:relative  left-0 lg:flex flex-col justify-between max-w-[14rem]">
       <div className="flex items-center">
@@ -23,7 +22,6 @@ const Navbar = () => {
               isActive ? "bg-white shadow-lg " : "text-secondary"
             }`
           }
-          href="/"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +46,6 @@ const Navbar = () => {
               isActive ? "bg-white shadow-lg " : "text-secondary"
             }`
           }
-          href="/about"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +72,6 @@ const Navbar = () => {
               isActive ? "bg-white shadow-lg " : "text-secondary"
             }`
           }
-          href="/projects"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +97,6 @@ const Navbar = () => {
               isActive ? "bg-white shadow-lg " : "text-secondary"
             }`
           }
-          href="/blog"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +124,6 @@ const Navbar = () => {
               isActive ? "bg-white shadow-lg " : "text-secondary"
             }`
           }
-          href="/contact"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +162,7 @@ const Navbar = () => {
             strokeLinejoin="round"
             className="h-4 w-4 flex-shrink-0"
           >
-            <path d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.332-1.757-1.332-1.757-1.086-.744.082-.729.082-.729 1.2.084 1.833 1.234 1.833 1.234 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.306.76-1.607-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.124-.302-.535-1.518.118-3.165 0 0 1.008-.323 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.29-1.553 3.297-1.23 3.297-1.23.653 1.647.242 2.863.118 3.165.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.102.823 2.222 0 1.606-.014 2.9-.014 3.293 0 .322.218.694.825.577C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            <path d="M512 0C229.23 0 0 229.23 0 512c0 226.74 146.97 418.69 350.27 486.13 25.59 4.7 34.95-11.12 34.95-24.72 0-12.19-.45-44.44-.69-87.21-142.51 30.97-172.57-68.76-172.57-68.76-23.27-59.11-56.8-74.84-56.8-74.84-46.46-31.76.35-31.12.35-31.12 51.37 3.62 78.41 52.77 78.41 52.77 45.64 78.22 119.71 55.63 148.9 42.55 4.59-33.04 17.85-55.64 32.49-68.45-113.73-12.94-233.14-56.86-233.14-253.01 0-55.91 19.96-101.59 52.72-137.41-5.28-12.94-22.82-65.03 5.02-135.6 0 0 42.97-13.75 140.73 52.44 40.86-11.36 84.74-17.04 128.36-17.23 43.61.19 87"></path>
           </svg>
           <span>Github</span>
         </a>
