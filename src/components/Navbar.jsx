@@ -152,6 +152,7 @@ const Navbar = () => {
           Socials
         </p>
         <a
+          target="_blank"
           className="text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
           href="https://github.com/CMs-web"
         >
@@ -172,6 +173,7 @@ const Navbar = () => {
           <span>Github</span>
         </a>
         <a
+          target="_blank"
           className="text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
           href="https://www.linkedin.com/in/shivam-goswami-694636288/"
         >
@@ -196,6 +198,7 @@ const Navbar = () => {
           <span>LinkedIn</span>
         </a>
         <a
+          target="_blank"
           className="text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
           href="https://youtube.com/maninthere"
         >
