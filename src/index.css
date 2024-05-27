@@ -9,11 +9,11 @@
 
 @font-face {
   font-family: 'font1';
-  src: url('../public/font1.ttf');
+  src: url('/font1.ttf');
 }
 @font-face {
   font-family: 'font2';
-  src: url('../public/font2.ttf');
+  src: url('/font2.ttf');
 }
 :root{
   --secondary : #737373;
@@ -29,8 +29,9 @@ body {
   padding: 0;
 }
 
- h1 {
+ .__className_399708 {
   font-family: font1;
+  color: var(--primary);
 }
 
 p {

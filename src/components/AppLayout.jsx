@@ -3,7 +3,7 @@ import Navbar from "./Navbar"
 
 const AppLayout = () => {
   return (
-    <div className="flex overflow-hidden h-screen">
+    <div className="sm-block flex overflow-hidden h-screen">
       <Navbar />
       <Outlet/>
     </div>
