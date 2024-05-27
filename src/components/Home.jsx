@@ -1,7 +1,34 @@
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {
+    opacity: 0,
+    scale : 0.5,
+  },
+  visible: {
+    opacity: 1,
+    scale : 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: {
+    x: -100,
+    opacity : 0,
+  },
+  visible: {
+    x: 0,
+    opacity : 1
+  }
+}
 
 const Home = () => {
   return (
-    <div className="flex-1 bg-white min-h-screen overflow-y-auto">
+    <motion.div variants={container} initial="hidden" animate="visible" className="flex-1 bg-white min-h-screen overflow-y-auto">
       <main className="max-w-4xl w-full mx-auto py-20 px-4 md:px-10">
         <span className="text-4xl">👋</span>
         <h1 className="__className_399708 text-base md:text-xl lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary font-black">
@@ -25,7 +52,7 @@ const Home = () => {
         </h2>
         <div>
           <div className="grid grid-cols-1  gap-10">
-            <div>
+            <motion.div variants={item}>
               <a
                 target="_blank"
                 className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
@@ -56,8 +83,9 @@ const Home = () => {
                   </div>
                 </div>
               </a>
-            </div>
-            <a
+            </motion.div>
+            <motion.a
+              variants={item}
               target="_blank"
               className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
               href="https://expense-manager-livid.vercel.app/"
@@ -86,8 +114,9 @@ const Home = () => {
                   </span>
                 </div>
               </div>
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              variants={item}
               target="_blank"
               className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
               href="https://bankist-app-umber.vercel.app/"
@@ -115,11 +144,11 @@ const Home = () => {
                   </span>
                 </div>
               </div>
-            </a>
+            </motion.a>
           </div>
         </div>
       </main>
-    </div>
+    </motion.div>
   );
 };
 

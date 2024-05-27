@@ -1,7 +1,30 @@
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
 
 const About = () => {
   return (
-    <div className="flex-1 bg-white min-h-screen overflow-y-auto">
+    <motion.div variants={container} initial="hidden" animate="visible" className="flex-1 bg-white min-h-screen overflow-y-auto">
       <main className="max-w-4xl w-full mx-auto py-20 px-4 md:px-10">
         <span className="text-4xl">💬</span>
         <h1 className="__className_399708 text-base md:text-xl lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary font-black">
@@ -9,7 +32,8 @@ const About = () => {
         </h1>
         <div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 my-10">
-            <div
+            <motion.div
+              variants={item}
               style={{
                 opacity: 1,
                 transform: "translateY(0px) rotate(3deg) translateZ(0px)",
@@ -26,9 +50,10 @@ const About = () => {
                 src="/about1.webp"
                 style={{ color: "transparent" }}
               />
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
+              variants={item}
               style={{
                 opacity: 1,
                 transform: "translateY(0px) rotate(3deg) translateZ(0px)",
@@ -45,8 +70,9 @@ const About = () => {
                 src="/about2.webp"
                 style={{ color: "transparent" }}
               />
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              variants={item}
               style={{
                 opacity: 1,
                 transform: "translateY(0px) rotate(3deg) translateZ(0px)",
@@ -63,8 +89,9 @@ const About = () => {
                 src="/about3.webp"
                 style={{ color: "transparent" }}
               />
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              variants={item}
               style={{
                 opacity: 1,
                 transform: "translateY(0px) rotate(3deg) translateZ(0px)",
@@ -81,7 +108,7 @@ const About = () => {
                 src="/about4.webp"
                 style={{ color: "transparent" }}
               />
-            </div>
+            </motion.div>
           </div>
           <div className="max-w-4xl">
             <p className="text-sm lg:text-base font-normal text-secondary mt-4">
@@ -134,7 +161,7 @@ const About = () => {
       <div className="p-4 text-center justify-center text-xs text-neutral-500 border-t border-neutral-100">
         <span className="font-semibold">2024  designed by Shivam itself with ❤ </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
