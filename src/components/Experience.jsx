@@ -1,6 +1,20 @@
+import { motion } from "framer-motion";
+
 const Experience = () => {
+
+  const container = {
+    hidden: {
+      opacity: 0,
+      x : -30,
+    },
+    visible: {
+      opacity: 1,
+      x : 0,
+    }
+  }
+
     return (
-      <section className="overflow-auto w-[100%]">
+      <motion.section variants={container} initial="hidden" animate="visible" className="overflow-auto w-[100%]">
         <main className="overflow-auto max-w-4xl w-full mx-auto py-20 px-4 md:px-10">
           <span>
             <img src="/logo.png" alt="" />
@@ -70,7 +84,7 @@ const Experience = () => {
             </li>
           </ul>
         </main>
-      </section>
+      </motion.section>
     );
 };
 
