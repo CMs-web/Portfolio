@@ -6,10 +6,14 @@ import {
 } from "@/components/ui/sheet";
 
 import { NavLink } from "react-router-dom";
+import HomeSVG from "./HomeSVG";
+import AboutSVG from "./AboutSVG";
+import ProjectsSVG from "./ProjectsSVG";
+import ExperienceSVG from "./ExperienceSVG";
+import ContactSVG from "./ContactSVG";
 
 const MenuIcon = () => {
   return (
-    <>
       <div className=" sm:grid grid-cols-2 gap-2 lg:hidden ">
         <Sheet>
           <SheetTrigger asChild>
@@ -54,23 +58,14 @@ const MenuIcon = () => {
                     }`
                   }
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 flex-shrink-0 text-sky-500"
-                  >
-                    <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11"></path>
-                  </svg>
-                  <SheetClose asChild>
-                    <span>Home</span>
-                  </SheetClose>
+                  {({ isActive }) => (
+                    <>
+                      <HomeSVG isActive={isActive} />
+                      <SheetClose asChild>
+                        <span>Home</span>
+                      </SheetClose>
+                    </>
+                  )}
                 </NavLink>
                 <NavLink
                   to={"/about"}
@@ -80,25 +75,14 @@ const MenuIcon = () => {
                     }`
                   }
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 flex-shrink-0 "
-                  >
-                    <path d="M8 9h8"></path>
-                    <path d="M8 13h6"></path>
-                    <path d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z"></path>
-                  </svg>
-                  <SheetClose asChild>
-                    <span>About</span>
-                  </SheetClose>
+                  {({ isActive }) => (
+                    <>
+                      <AboutSVG isActive={isActive} />
+                      <SheetClose asChild>
+                        <span>About</span>
+                      </SheetClose>
+                    </>
+                  )}
                 </NavLink>
                 <NavLink
                   to={"/projects"}
@@ -108,24 +92,14 @@ const MenuIcon = () => {
                     }`
                   }
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 flex-shrink-0"
-                  >
-                    <path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z"></path>
-                    <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
-                  </svg>
-                  <SheetClose asChild>
-                    <span>Projects</span>
-                  </SheetClose>
+                  {({ isActive }) => (
+                    <>
+                      <ProjectsSVG isActive={isActive} />
+                      <SheetClose asChild>
+                        <span>Projects</span>
+                      </SheetClose>
+                    </>
+                  )}
                 </NavLink>
                 <NavLink
                   to={"/experience"}
@@ -135,26 +109,14 @@ const MenuIcon = () => {
                     }`
                   }
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 flex-shrink-0"
-                  >
-                    <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
-                    <path d="M7 8h10"></path>
-                    <path d="M7 12h10"></path>
-                    <path d="M7 16h10"></path>
-                  </svg>
-                  <SheetClose asChild>
-                    <span>Experience</span>
-                  </SheetClose>
+                  {({ isActive }) => (
+                    <>
+                      <ExperienceSVG isActive={isActive} />
+                      <SheetClose asChild>
+                        <span>Experience</span>
+                      </SheetClose>
+                    </>
+                  )}
                 </NavLink>
                 <NavLink
                   to={"/contact"}
@@ -164,24 +126,14 @@ const MenuIcon = () => {
                     }`
                   }
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 flex-shrink-0"
-                  >
-                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
-                    <path d="M3 7l9 6l9 -6"></path>
-                  </svg>
-                  <SheetClose asChild>
-                    <span>Contact</span>
-                  </SheetClose>
+                  {({ isActive }) => (
+                    <>
+                      <ContactSVG isActive={isActive} />
+                      <SheetClose asChild>
+                        <span>Contact</span>
+                      </SheetClose>
+                    </>
+                  )}
                 </NavLink>
                 <p className="__className_399708 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary text-sm md:text-sm lg:text-sm pt-10 px-2">
                   Socials
@@ -283,7 +235,6 @@ const MenuIcon = () => {
           </SheetContent>
         </Sheet>
       </div>
-    </>
   );
 };
 

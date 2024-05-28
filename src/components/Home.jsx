@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 const container = {
   hidden: {
     opacity: 0,
-    scale : 0.5,
+    // scale : 0.5,
   },
   visible: {
     opacity: 1,
-    scale : 1,
+    // scale : 1,
     transition: {
       delayChildren: 0.3,
       staggerChildren: 0.2,

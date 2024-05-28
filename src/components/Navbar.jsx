@@ -1,5 +1,10 @@
 import { NavLink } from "react-router-dom";
 import MenuIcon from "./ui/MenuIcon";
+import AboutSVG from "./ui/AboutSVG";
+import HomeSVG from "./ui/HomeSVG";
+import ProjectsSVG from "./ui/ProjectsSVG";
+import ExperienceSVG from "./ui/ExperienceSVG";
+import ContactSVG from "./ui/ContactSVG";
 
 const Navbar = () => {
   return (
@@ -27,50 +32,28 @@ const Navbar = () => {
                 isActive ? "bg-white shadow-lg " : "text-secondary"
               }`
             }
-            href="/"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-4 w-4 flex-shrink-0 text-sky-500"
-            >
-              <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11"></path>
-            </svg>
-            <span>Home</span>
+            {({ isActive }) => (
+              <>
+                <HomeSVG isActive={isActive} />
+                <span>Home</span>
+              </>
+            )}
           </NavLink>
           <NavLink
             to={"/about"}
             className={({ isActive }) =>
               ` hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm ${
-                isActive ? "bg-white shadow-lg " : "text-secondary"
+                isActive ? "bg-white shadow-lg" : "text-secondary"
               }`
             }
-            href="/about"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-4 w-4 flex-shrink-0 "
-            >
-              <path d="M8 9h8"></path>
-              <path d="M8 13h6"></path>
-              <path d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z"></path>
-            </svg>
-            <span>About</span>
+            {({ isActive }) => (
+              <>
+                <AboutSVG isActive={isActive} />
+                <span>About</span>
+              </>
+            )}
           </NavLink>
           <NavLink
             to={"/projects"}
@@ -79,24 +62,13 @@ const Navbar = () => {
                 isActive ? "bg-white shadow-lg " : "text-secondary"
               }`
             }
-            href="/projects"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-4 w-4 flex-shrink-0"
-            >
-              <path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z"></path>
-              <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
-            </svg>
-            <span>Projects</span>
+            {({ isActive }) => (
+              <>
+                <ProjectsSVG isActive={isActive} />
+                <span>Projects</span>
+              </>
+            )}
           </NavLink>
           <NavLink
             to={"/experience"}
@@ -105,26 +77,13 @@ const Navbar = () => {
                 isActive ? "bg-white shadow-lg " : "text-secondary"
               }`
             }
-            href="/blog"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-4 w-4 flex-shrink-0"
-            >
-              <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
-              <path d="M7 8h10"></path>
-              <path d="M7 12h10"></path>
-              <path d="M7 16h10"></path>
-            </svg>
-            <span to={"/experience"}>Experience</span>
+            {({ isActive }) => (
+              <>
+                <ExperienceSVG isActive={isActive} />
+                <span>Experience</span>
+              </>
+            )}
           </NavLink>
           <NavLink
             to={"/contact"}
@@ -133,30 +92,20 @@ const Navbar = () => {
                 isActive ? "bg-white shadow-lg " : "text-secondary"
               }`
             }
-            href="/contact"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-4 w-4 flex-shrink-0"
-            >
-              <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
-              <path d="M3 7l9 6l9 -6"></path>
-            </svg>
-            <span>Contact</span>
+            {({ isActive }) => (
+              <>
+                <ContactSVG isActive={isActive} />
+                <span>Contact</span>
+              </>
+            )}
           </NavLink>
           <p className="__className_399708 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary text-sm md:text-sm lg:text-sm pt-10 px-2">
             Socials
           </p>
           <a
-            className="text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+            target="_blank"
+            className="text-secondary hover:text-sky-500 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
             href="https://github.com/CMs-web"
           >
             <svg
@@ -169,14 +118,15 @@ const Navbar = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-4 w-4 flex-shrink-0"
+              className="h-4 w-4 flex-shrink-0 hover:text-sky-500"
             >
               <path d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.332-1.757-1.332-1.757-1.086-.744.082-.729.082-.729 1.2.084 1.833 1.234 1.833 1.234 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.306.76-1.607-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.124-.302-.535-1.518.118-3.165 0 0 1.008-.323 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.29-1.553 3.297-1.23 3.297-1.23.653 1.647.242 2.863.118 3.165.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.102.823 2.222 0 1.606-.014 2.9-.014 3.293 0 .322.218.694.825.577C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
             </svg>
             <span>Github</span>
           </a>
           <a
-            className="text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+            target="_blank"
+            className="text-secondary hover:text-sky-500 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
             href="https://www.linkedin.com/in/shivam-goswami-694636288/"
           >
             <svg
@@ -200,8 +150,10 @@ const Navbar = () => {
             <span>LinkedIn</span>
           </a>
           <a
-            className="text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
-            href="https://youtube.com/maninthere"
+            target="blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:text-sky-500 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+            href="https://api.whatsapp.com/send?phone=7000843747&text=Hello%20there!"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
